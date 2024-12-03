@@ -11,9 +11,7 @@ export default function Products(){
 
     function addCart(product) {
 
-      
-            setCart((pre) => [...pre, product])
-           
+        setCart((pre) => [...pre, product])   
     }
    
     return(
@@ -32,7 +30,9 @@ export default function Products(){
             </div>
             <div className="item3">
                 {
-                 <Cart cartData={cart}/>
+
+               
+                <Cart cartData={cart}/>
                 }
             </div>
         </>

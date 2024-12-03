@@ -2,6 +2,7 @@ import '../assets/CSS/layout.css';
 import { useState } from 'react'
 export default function Product({flowerData,addCart}){
     const [ quantity, setQuantity ] = useState()
+    
     const product = {
         name:"",
         quantity:"",
