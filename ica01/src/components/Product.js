@@ -1,5 +1,6 @@
 import '../assets/CSS/layout.css';
-export default function Product(){
+import { useState } from 'react'
+export default function Product({flowerData,addCart}){
     
     return(
         <div className="grid-item">
@@ -7,9 +8,10 @@ export default function Product(){
             <div class="card">
                 <img  />
                 <div class="card-body">
-                    <h5 class="card-title">Price:</h5>
+                <img  src={require(`../assets/image/${flowerData.img}`) }/>
+                    <h5 class="card-title">Price:{flowerData.price}</h5>
                     <div class="quantity-container">
-                        <label for="quantity">Quantity:</label>
+                        <label for="quantity">Quantity:{flowerData.qty}</label>
                         <input type="number" id="quantity" name="quantity" />
                     </div>
                     <button class="card-button">Add to Cart</button>

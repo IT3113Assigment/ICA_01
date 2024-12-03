@@ -25,7 +25,7 @@ export default function Products(){
                 <h4 className="card-title">Buy flowers</h4>
                 <div className="grid-container">
                     {
-                        flowers.map((flower) => <Product key={flower.id} flower={flower} addCart={addCart}/>)
+                        flowers.map((flower) => <Product key={flower.id} flowerData={flower} addCart={addCart}/>)
                     }
                 </div>
 
