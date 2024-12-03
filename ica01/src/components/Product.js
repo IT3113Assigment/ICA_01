@@ -32,7 +32,7 @@ export default function Product({flowerData,addCart}){
                 <img  src={require(`../assets/image/${flowerData.img}`) }/>
                     <h5 class="card-title">Price:{flowerData.price}</h5>
                     <div class="quantity-container">
-                        <label for="quantity">Quantity:{flowerData.qty}</label>
+                        <label for="quantity">Quantity:</label>
                         <input type="number" id="quantity" name="quantity" onChange={(e) => {handleFlower(e.target.value)}}/>
                     </div>
                     <button class="card-button"onClick={() => {addToCart()}}>Add to Cart</button>
